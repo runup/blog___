@@ -1,0 +1,21 @@
+
+
+	<%= link_to '新建文章',new_two_path%>	
+	
+
+
+
+
+<div>
+<ol>
+<%@two.each do |t|%>
+	<li><%=link_to t.title,t %>|
+		<%=link_to '编辑',edit_two_path(t) %>|
+		<%= link_to '删除',two_path(t), method: :delete, data: { confirm: '确定删除?' } %>
+    </li>
+
+<%end%>
+
+</ol>
+
+</div>

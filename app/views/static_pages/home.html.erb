@@ -1,0 +1,13 @@
+<div class="center hero-unit">
+<h3 align="center">遇见未来的自己</h3>
+<img src="assets/relation.png" alt="这是一张图片"/>
+</br>
+<%= link_to "马上注册", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<ul>
+<%@two.each do |t|%>
+<li><%=t.title%>|<%=t.content%></li>
+<%end%>
+</ul>
+

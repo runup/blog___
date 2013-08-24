@@ -1,0 +1,19 @@
+文章标题:<%=@two.title%>
+<br>
+文章内容</br>
+<%=@two.content%>
+</br>
+<%= link_to '返回文章列表',twos_path%>
+
+<h2>文章评论评论</h2>
+<%= form_for(@comment) do |f| %>
+
+  <div class="field">
+    <%= f.label :评论 %><br />
+    <%= f.text_field :comment %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit  :提交%>
+  </div>
+<% end %>

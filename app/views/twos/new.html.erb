@@ -1,0 +1,15 @@
+<h2>新增文章</h2>
+<%= form_for(@two) do |f| %>
+
+  <div class="field">
+    <%= f.label :题目 %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :内容 %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit  :提交%>
+  </div>
+<% end %>
